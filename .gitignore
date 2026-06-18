@@ -1,6 +1,9 @@
+*.pyc
 __pycache__/
-*.py[cod]
 *.egg-info/
-dist/
 build/
-*.egg
+dist/
+.spec
+test_config.json
+test_integration.py
+
