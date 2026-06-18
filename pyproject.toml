@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freqtrade-mcp-server"
+version = "0.1.0"
+description = "MCP server for cryptocurrency trading via Freqtrade: balance, trades, backtesting, strategies"
+authors = [{name = "Cee Yang"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["mcp", "freqtrade", "crypto", "trading", "backtesting", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "freqtrade-client>=2026.5",
+    "mcp>=1.0"
+]
+
+[project.scripts]
+freqtrade-mcp-server = "freqtrade_mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/ceeyang-ai/freqtrade-mcp-server"
